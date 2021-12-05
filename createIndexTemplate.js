@@ -3,7 +3,8 @@ import fs from 'fs'
 export default (config) => {
     const indexTemplate = fs.readFileSync('./template/index.ejs')
     const code = ejs.render(indexTemplate.toString(), {
-        middleware: config.middleware
+        middleware: config.middleware,
+        port: config.port
     })
     return code
 }
