@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/amebyte/mini-node-cli/issues"
   },
-  "homepage": "https://github.com/amebyte/mini-node-cli#readme"
+  "homepage": "https://github.com/amebyte/mini-node-cli#readme",
+  "dependencies": {
+    "ejs": "^3.1.6"
+  }
 }
