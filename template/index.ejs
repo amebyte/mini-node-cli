@@ -1,8 +1,8 @@
 const Koa = require("koa")
-    <% if (router) { %>
+    <% if (middleware.router) { %>
     const Router = require("koa-router")
     <% } %>
-    <% if (static) { %>
+    <% if (middleware.static) { %>
     const serve = require("koa-static")
     <% } %>
 
@@ -15,7 +15,7 @@ const Koa = require("koa")
 
     const app = new Koa()
 
-    <% if (static) { %>
+    <% if (middleware.static) { %>
     app.use(serve(__dirname+"/static"))
     <% } %>
 
@@ -31,7 +31,7 @@ const Koa = require("koa")
     }))
 
 
-    <% if (router) { %>
+    <% if (middleware.router) { %>
     const router = new Router()
     router.get("/",(ctx)=>{
         ctx.body = "hello test"

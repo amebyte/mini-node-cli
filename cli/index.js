@@ -1,6 +1,8 @@
 const Koa = require("koa")
     
     
+    const serve = require("koa-static")
+    
 
     const views = require("koa-views")
 
@@ -11,6 +13,8 @@ const Koa = require("koa")
 
     const app = new Koa()
 
+    
+    app.use(serve(__dirname+"/static"))
     
 
 
