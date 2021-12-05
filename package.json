@@ -1,0 +1,21 @@
+{
+  "name": "mini-node-cli",
+  "version": "1.0.0",
+  "description": "编写基于 nodejs 的 cli 工具 - 动态生成代码模板",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amebyte/mini-node-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amebyte/mini-node-cli/issues"
+  },
+  "homepage": "https://github.com/amebyte/mini-node-cli#readme"
+}
