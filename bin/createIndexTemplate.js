@@ -2,6 +2,7 @@ import ejs from 'ejs'
 import fs from 'fs'
 import { fileURLToPath } from 'url'
 import path from 'path'
+import prettier from 'prettier'
 
 export default (config) => {
     const __dirname = fileURLToPath(import.meta.url)
@@ -10,5 +11,5 @@ export default (config) => {
         middleware: config.middleware,
         port: config.port
     })
-    return code
+    return prettier.format(code, { parser: 'babel' }) 
 }

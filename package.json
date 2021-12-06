@@ -6,8 +6,8 @@
   "bin": "./bin/index.js",
   "type": "module",
   "files": [
-      "bin",
-      "package.json"
+    "bin",
+    "package.json"
   ],
   "scripts": {
     "test": "rd /q /s cli && node index.js",
@@ -27,6 +27,7 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "execa": "^6.0.0",
-    "inquirer": "^8.2.0"
+    "inquirer": "^8.2.0",
+    "prettier": "^2.5.1"
   }
 }
