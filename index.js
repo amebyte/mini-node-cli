@@ -1,5 +1,5 @@
 import fs from 'fs'
-
+import { execaCommand } from 'execa'
 import createIndexTemplate from './createIndexTemplate.js'
 import createPackageTemplate from './createPackageTemplate.js'
 import quesition from './question/index.js'
@@ -13,6 +13,13 @@ fs.writeFileSync(`${getRootPath()}/index.js`, createIndexTemplate(inputConfig))
 // 3. 创建package.json
 fs.writeFileSync(`${getRootPath()}/package.json`, createPackageTemplate(inputConfig))
 // 4. 安装依赖
+execaCommand('yarn', {
+    cwd: getRootPath(),
+    // stdio: ['pipe', 'inherit', 'ipc']
+    // stdio: ['inherit', 'pipe', 'ipc']
+    // stdio: ['inherit', 'inherit', 'ipc']
+    stdio: ['inherit', 'inherit', 'inherit']
+})
 
 function getRootPath() {
     return './cli'

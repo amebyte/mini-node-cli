@@ -1,7 +1,5 @@
 const Koa = require("koa")
     
-    const Router = require("koa-router")
-    
     
     const serve = require("koa-static")
     
@@ -32,13 +30,7 @@ const Koa = require("koa")
 
 
     
-    const router = new Router()
-    router.get("/",(ctx)=>{
-        ctx.body = "hello test"
-    })
-    app.use(router.routes())
-    
 
-    app.listen(86,()=>{
-        console.log("open server localhost:86")
+    app.listen(8080,()=>{
+        console.log("open server localhost:8080")
     })
