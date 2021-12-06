@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node index.js"
+    "test": "rd /q /s cli && node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/amebyte/mini-node-cli#readme",
   "dependencies": {
     "ejs": "^3.1.6",
+    "execa": "^6.0.0",
     "inquirer": "^8.2.0"
   }
 }

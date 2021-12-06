@@ -39,6 +39,6 @@ const Koa = require("koa")
     app.use(router.routes())
     
 
-    app.listen(8080,()=>{
-        console.log("open server localhost:8080")
+    app.listen(86,()=>{
+        console.log("open server localhost:86")
     })
