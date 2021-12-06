@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from 'fs'
 import { execaCommand } from 'execa'
 import createIndexTemplate from './createIndexTemplate.js'

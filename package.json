@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "编写基于 nodejs 的 cli 工具 - 动态生成代码模板",
   "main": "index.js",
+  "bin": "./bin/index.js",
   "type": "module",
   "scripts": {
-    "test": "rd /q /s cli && node index.js"
+    "test": "rd /q /s cli && node index.js",
+    "test-g": "rd /q /s cli && mini-node-cli"
   },
   "repository": {
     "type": "git",
